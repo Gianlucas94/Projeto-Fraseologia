@@ -129,7 +129,7 @@
           </li>
           <li>
             <n-link to="/geral/andamento/indisponibilidade-snow"
-              >Indisponibilidade na ferramenta Service Now</n-link
+              >Indisponibilidade na ferramenta HPSM</n-link
             >
           </li>
           <li>

@@ -1,8 +1,8 @@
 {
-  "name": "fraseologia",
-  "version": "2.0.0",
-  "description": "Fraseologia",
-  "author": "Vitor Melo",
+  "name": "fraseologiaWM",
+  "version": "1.0.0",
+  "description": "FraseologiaWM",
+  "author": "Gianlucas Almeida",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -14,8 +14,10 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
+    "node-sass": "^7.0.1",
     "nuxt": "^2.0.0",
-    "uikit": "^3.9.2",
+    "sass-loader": "^12.4.0",
+    "uikit": "^3.10.1",
     "vue-date-pick": "^1.2.1",
     "vue-select": "^3.2.0"
   },

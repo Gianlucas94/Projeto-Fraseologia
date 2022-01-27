@@ -10,7 +10,8 @@
     >
       <h1 class="uk-h4 uk-text-uppercase">Áreas</h1>
       <div class="uk-child-width-1-5@m uk-grid-small uk-grid-match" uk-grid>
-        <div>
+        <!--
+          <div>
           <n-link
             to="/atendimento/inicio/chat"
             class="uk-button uk-button-default"
@@ -18,14 +19,16 @@
             >Atendimento</n-link
           >
         </div>
+        !-->
         <div>
           <n-link
             to="/geral/inicio/atendimento"
             class="uk-button uk-button-default"
             @click.native="updateLayout('remoto')"
-            >Remoto</n-link
+            >Field</n-link
           >
         </div>
+        <!--
         <div>
           <n-link
             to="/geral/inicio/atendimento"
@@ -50,7 +53,9 @@
             >VCTP</n-link
           >
         </div>
+        !-->
       </div>
+      
     </main>
     <app-footer />
   </div>
