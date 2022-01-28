@@ -1,4 +1,5 @@
 # Fraseologia
+Made by [Vitor Melo](https://github.com/vtmx)
 
 ## Build Setup
 
@@ -25,7 +26,7 @@ yarn generate
 yarn deploy
 
 #surge deploy
-nuxt generate && surge --project dist/ --domain fraseologia.surge.sh
+nuxt generate && surge --project dist/ --domain fraseologiawm.surge.sh
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
