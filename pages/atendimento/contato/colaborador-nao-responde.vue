@@ -156,7 +156,7 @@ Caro(a) colaborador(a),
 Devido à perda de contato, pedimos que retorne novamente com a Central Service Desk para darmos continuidade no atendimento.
 
 Atenciosamente,
-Service Desk Itaú-Unibanco`,
+Service Desk White Martins`,
     };
   },
   mounted() {
@@ -172,7 +172,8 @@ Caro(a) ${this.colaborador},
 Devido à perda de contato, pedimos que retorne novamente com a Central Service Desk para darmos continuidade no atendimento.
 
 Atenciosamente,
-Service Desk Itaú-Unibanco`;
+Service Desk White Martins
+`;
     },
   },
 };

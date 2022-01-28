@@ -82,7 +82,7 @@ export default {
 HD encontra-se no processo abaixo:
 Previsão para nova atualização de log: ${this.dataHtml} às ${this.hora}.
 
-*** Líder Itaú não nos informou prazo, o mesmo está ciente deste caso. ***`;
+*** Líder White Martins não nos informou prazo, o mesmo está ciente deste caso. ***`;
     this.$store.commit('updateDetalhes', this.detalhes);
   },
   methods: {
@@ -109,7 +109,7 @@ Previsão para nova atualização de log: ${this.dataHtml} às ${this.hora}.
       this.detalhes = `HD encontra-se no processo: Em transporte para fornecedor tentar recuperar os dados.
 Previsão para nova atualização de log: ${this.dataHtml} às ${this.hora}. ${processoMotivo}
 
-*** Líder Itaú não nos informou prazo, o mesmo está ciente deste caso. *** `;
+*** Líder White Martins não nos informou prazo, o mesmo está ciente deste caso. *** `;
 
       this.$store.commit('updateDetalhes', this.detalhes);
     },

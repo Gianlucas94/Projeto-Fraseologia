@@ -29,7 +29,7 @@
         <div class="uk-width-1-3">
           <label for="sof-ambiente" class="uk-form-label required">Ambiente</label>
           <select id="sof-ambiente" class="uk-select" v-model="info.sofAmbiente" @change="updateDetalhes">
-            <option>Itaú-Unibanco</option>
+            <option>White Martins</option>
             <option>Rede</option>
             <option>IBBA</option>
           </select>
@@ -412,7 +412,7 @@ export default {
         info: {
           // Dados gerais
           sofSolicitacaoNumero: '',
-          sofAmbiente: 'Itaú-Unibanco',
+          sofAmbiente: 'White Martins',
           sofConclusaoCertificacao: 'Certificado',
           sofTipoLicenca: 'Corporativo',
           dataInicio: '',
@@ -546,11 +546,11 @@ export default {
       let caminhoRede = '\\\\172.20.201.93\\Golddisk\\Fieldservice JK';
       let mapeamento = '';
 
-      if ((sofAmbiente === 'Itaú-Unibanco' || sofAmbiente === 'IBBA') && sofTipoLicenca === 'Corporativo') {
+      if ((sofAmbiente === 'White Martins' || sofAmbiente === 'IBBA') && sofTipoLicenca === 'Corporativo') {
         mapeamento = `${caminhoItau}\\SOFTWARE_CORPORATIVO`;
-      } else if ((sofAmbiente === 'Itaú-Unibanco' || sofAmbiente === 'IBBA') && sofTipoLicenca === 'Restrito') {
+      } else if ((sofAmbiente === 'White Martins' || sofAmbiente === 'IBBA') && sofTipoLicenca === 'Restrito') {
         mapeamento = `${caminhoItau}\\SOFTWARE_RESTRITO`;
-      } else if ((sofAmbiente === 'Itaú-Unibanco' || sofAmbiente === 'IBBA') && tipoLicenca === 'Licença') {
+      } else if ((sofAmbiente === 'White Martins' || sofAmbiente === 'IBBA') && tipoLicenca === 'Licença') {
         mapeamento = `${caminhoItau}\\SOFTWARE_LICENCIADO`;
 
       } else if (sofAmbiente === 'Rede' && sofTipoLicenca === 'Corporativo') {

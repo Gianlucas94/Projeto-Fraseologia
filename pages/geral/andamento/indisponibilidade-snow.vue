@@ -85,7 +85,7 @@ export default {
   },
   data() {
     return {
-      resumo: 'Indisponibilidade na ferramenta Service Now',
+      resumo: 'Indisponibilidade na ferramenta HPSM',
       status: 'Em espera',
       detalhes: '',
       // ---
@@ -110,10 +110,9 @@ export default {
     updateDetalhes() {
       this.dataHtml = Fraseologia.todayHtml(this.data);
 
-      this.detalhes = `Identificado Indisponibilidade na ferramenta Service Now: ${this.detalhesSnow}
+      this.detalhes = `Identificado Indisponibilidade na ferramenta HPSM: ${this.detalhesSnow}
 Essa indisponibilidade está impossibilitando a atualização de chamados e poderá ocorrer impacto no SLA.
-Foram efetuados testes nos navegadores: Google Chrome e Internet Explorer, porém sem sucesso.
-Equipe de Gestão Máximo foi acionada, equipe GAPAS ciente, conforme evidência em anexo.
+Foram efetuados testes nos navegadores: Google Chrome e Internet Explorer, porém sem sucesso.´
 Previsão para nova atualização de log: ${this.dataHtml} às ${this.hora}`;
 
       this.$store.commit('updateDetalhes', this.detalhes);

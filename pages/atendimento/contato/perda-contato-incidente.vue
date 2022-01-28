@@ -218,7 +218,7 @@ Apesar da interrupção do atendimento, o suporte foi concluído com sucesso.
 Se houver alguma dúvida, ou algo em que possamos ajudar, pedimos que retorne a Central Service Desk, onde estaremos à disposição.
 
 Atenciosamente,
-Service Desk Itaú-Unibanco`,
+Service Desk White Martins`,
 
       acoesB: `Caro(a) coraborador(a),
 
@@ -227,7 +227,7 @@ Devido à perda de contato, pedimos que retorne novamente com a Central Service 
 Informe o número do seu último incidente no menu Iu Click> Meus Chamados.
 
 Atenciosamente,
-Service Desk Itaú-Unibanco`,
+Service Desk White Martins`,
     };
   },
   mounted() {
@@ -244,7 +244,7 @@ Apesar da interrupção do atendimento, o suporte foi concluído com sucesso.
 Se houver alguma dúvida, ou algo em que possamos ajudar, pedimos que retorne a Central Service Desk, onde estaremos à disposição.
 
 Atenciosamente,
-Service Desk Itaú-Unibanco`;
+Service Desk White Martins`;
 
       this.acoesB = `Caro(a) ${this.colaboradorB},
 
@@ -253,7 +253,7 @@ Devido à perda de contato, pedimos que retorne novamente com a Central Service 
 Informe o número do seu último incidente no menu Iu Click> Meus Chamados.
 
 Atenciosamente,
-Service Desk Itaú-Unibanco`;
+Service Desk White Martins`;
     },
   },
 };

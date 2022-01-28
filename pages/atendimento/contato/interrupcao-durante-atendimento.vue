@@ -280,14 +280,14 @@ export default {
 Devido à perda de contato, pedimos que retorne novamente com a Central Service Desk para darmos continuidade no atendimento.
 
 Atenciosamente,
-Service Desk Itaú-Unibanco`,
+Service Desk White Martins`,
 
       acoesB: `Caro(a) colaborador(a),
 
 Devido à perda de contato, pedimos que retorne novamente com a Central Service Desk para darmos continuidade no atendimento.
 
 Atenciosamente,
-Service Desk Itaú-Unibanco`,
+Service Desk White Martins`,
     };
   },
   mounted() {
@@ -302,14 +302,14 @@ Service Desk Itaú-Unibanco`,
 Devido à perda de contato, pedimos que retorne novamente com a Central Service Desk para darmos continuidade no atendimento.
 
 Atenciosamente,
-Service Desk Itaú-Unibanco`;
+Service Desk White Martins`;
 
       this.acoesB = `Caro(a) ${this.colaboradorB},
 
 Devido à perda de contato, pedimos que retorne novamente com a Central Service Desk para darmos continuidade no atendimento.
 
 Atenciosamente,
-Service Desk Itaú-Unibanco`;
+Service Desk White Martins`;
     },
   },
 };

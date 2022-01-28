@@ -58,7 +58,7 @@ export default {
 
     this.$store.commit('updateResumo', this.resumo);
     this.$store.commit('updateStatus', this.status);
-    this.detalhes = `Aguardando resposta do líder Itaú referente ao Orçamento.
+    this.detalhes = `Aguardando resposta do líder White Martins referente ao Orçamento.
 E-mail de Orçamento enviado ao cliente e anexo ao chamado.
 Qual a previsão de término da atividade: ${this.dataHtml} às ${this.hora}.`;
 
@@ -68,7 +68,7 @@ Qual a previsão de término da atividade: ${this.dataHtml} às ${this.hora}.`;
     updateDetalhes() {
       this.dataHtml = Fraseologia.todayHtml(this.data);
 
-      this.detalhes = `Aguardando resposta do líder Itaú referente ao orçamento.
+      this.detalhes = `Aguardando resposta do líder White Martins referente ao orçamento.
 E-mail de orçamento enviado ao cliente e anexo ao chamado.
 Qual a previsão de término da atividade: ${this.dataHtml} às ${this.hora}.`;
 

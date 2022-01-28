@@ -67,7 +67,7 @@ export default {
     } else if (tentativa.value === '3ª Tentativa de contato') {
       this.detalhes = `3ª TENTATIVA DE CONTATO\nEfetuado tentativa de contato com o usuário via telefone e Teams, aguardado 05 min para retorno do contato para atendimento do chamado ${this.chamado}, mas sem sucesso conforme anexo. Será efetuado uma nova tentativa de contato no próximo período.`;
     } else if (tentativa.value == 'Encerramento') {
-      this.detalhes = `Efetuado a última tentativa de contato via telefone e Teams, aguardado 05 min para retorno do contato para atendimento do chamado ${this.chamado}, mas sem sucesso conforme anexo. O chamado ficará com o status “Resolvido” e você poderá reabri-lo através da ferramenta Service now (Itau.service-now.com/tech) é só seguir o caminho “Meus chamados” (no canto superior direito) selecionar o chamado que deseja reabrir e escolher a opção “Rejeitar”.`;
+      this.detalhes = `Efetuado a última tentativa de contato via telefone e Teams, aguardado 05 min para retorno do contato para atendimento do chamado ${this.chamado}, mas sem sucesso conforme anexo. O chamado ficará com o status “Resolvido” e você poderá reabri-lo através da ferramenta HPSM (hpsm.linde.lds) é só seguir o caminho “Meus chamados” (no canto superior direito) selecionar o chamado que deseja reabrir e escolher a opção “Rejeitar”.`;
       this.status = 'Resolvido';
     } else if (tentativa.value == 'Tentativa de contato pró-ativa') {
       this.detalhes = `Efetuado tentativa de contato proativa com o usuário via telefone e Teams, aguardado 05 min para retorno do contato para atendimento do chamado ${this.chamado}, mas sem sucesso conforme anexo. Será efetuado uma nova tentativa de contato no próximo período.`;
@@ -88,7 +88,7 @@ export default {
       } else if (tentativa.value === '3ª Tentativa de contato') {
         this.detalhes = `3ª TENTATIVA DE CONTATO\nEfetuado tentativa de contato com o usuário via telefone e Teams, aguardado 05 min para retorno do contato para atendimento do chamado ${this.chamado}, mas sem sucesso conforme anexo. Será efetuado uma nova tentativa de contato no próximo período.`;
       } else if (tentativa.value == 'Encerramento') {
-        this.detalhes = `Efetuado a última tentativa de contato via telefone e Teams, aguardado 05 min para retorno do contato para atendimento do chamado ${this.chamado}, mas sem sucesso conforme anexo. O chamado ficará com o status “Resolvido” e você poderá reabri-lo através da ferramenta Service now (Itau.service-now.com/tech) é só seguir o caminho “Meus chamados” (no canto superior direito) selecionar o chamado que deseja reabrir e escolher a opção “Rejeitar”.`;
+        this.detalhes = `Efetuado a última tentativa de contato via telefone e Teams, aguardado 05 min para retorno do contato para atendimento do chamado ${this.chamado}, mas sem sucesso conforme anexo. O chamado ficará com o status “Resolvido” e você poderá reabri-lo através da ferramenta HPSM (Itau.service-now.com/tech) é só seguir o caminho “Meus chamados” (no canto superior direito) selecionar o chamado que deseja reabrir e escolher a opção “Rejeitar”.`;
         this.status = 'Resolvido';
       } else if (tentativa.value == 'Tentativa de contato pró-ativa') {
         this.detalhes = `Efetuado tentativa de contato proativa com o usuário via telefone e Teams, aguardado 05 min para retorno do contato para atendimento do chamado ${this.chamado}, mas sem sucesso conforme anexo. Será efetuado uma nova tentativa de contato no próximo período.`;

@@ -30,7 +30,7 @@ export default {
     Fraseologia.focusFirst();
     Fraseologia.selectForm();
 
-    this.detalhes = 'Orçamento aprovado pelo líder Itaú, aguardando usuário encaminhar CDC para dar continuidade ao atendimento.';
+    this.detalhes = 'Orçamento aprovado pelo líder White Martins, aguardando usuário encaminhar CDC para dar continuidade ao atendimento.';
     this.$store.commit('updateResumo', this.resumo);
     this.$store.commit('updateStatus', this.status);
     this.$store.commit('updateDetalhes', this.detalhes);

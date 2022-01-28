@@ -13,7 +13,7 @@
         </div>
 
         <div class="uk-margin">
-          <label for="alinhamento" class="uk-form-label required">Qual foi o alinhamento com líder Itaú</label>
+          <label for="alinhamento" class="uk-form-label required">Qual foi o alinhamento com líder White Martins</label>
           <textarea id="alinhamento" class="uk-textarea" required v-model="alinhamento" @input="updateDetalhes"></textarea>
         </div>
       </div>
@@ -62,7 +62,7 @@ export default {
       detalhes: '',
       // ---
       tipoRoubo: 'Interno',
-      tipoTexto: 'Usuário relatou roubo/furto INTERNO e estamos aguardando a resposta do líder Itaú com o parecer da INSPETORIA, para continuidade do atendimento.',
+      tipoTexto: 'Usuário relatou roubo/furto INTERNO e estamos aguardando a resposta do líder White Martins com o parecer da INSPETORIA, para continuidade do atendimento.',
       alinhamento: '',
       data: '',
       dataHtml: '',
@@ -88,7 +88,7 @@ export default {
         if (this.tipoRoubo === 'Interno') {
           this.resumo = 'Roubo / Furto Interno';
           this.$store.commit('updateResumo', 'Roubo / Furto Interno');
-          this.tipoTexto = 'Usuário relatou roubo/furto INTERNO e estamos aguardando a resposta do líder Itaú com o parecer da INSPETORIA, para continuidade do atendimento.';
+          this.tipoTexto = 'Usuário relatou roubo/furto INTERNO e estamos aguardando a resposta do líder White Martins com o parecer da INSPETORIA, para continuidade do atendimento.';
         } else {
           this.resumo = 'Roubo / Furto Externo';
           this.$store.commit('updateResumo', 'Roubo / Furto Externo');
@@ -98,12 +98,12 @@ export default {
 
       this.detalhes = `${this.tipoTexto}
 
-Alinhado esse caso com líder Itaú: Sim
+Alinhado esse caso com líder White Martins: Sim
 Qual foi o alinhamento: ${this.alinhamento}
 
 Previsão para nova atualização de log: ${this.dataHtml} às ${this.hora}.
 
-*** A área de INSPETORIA não nos passou uma previsão de retorno, o líder Itaú será acionado para alinhamento. ***`;
+*** A área de INSPETORIA não nos passou uma previsão de retorno, o líder White Martins será acionado para alinhamento. ***`;
 
       this.$store.commit('updateDetalhes', this.detalhes);
     },

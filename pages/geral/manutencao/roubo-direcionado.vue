@@ -74,7 +74,7 @@ Não, por motivo de: trata-se de roubo/furto, portanto não há equipamento para
 Termo de Responsabilidade do Equipamento de Backup Anexo?
 ${this.termoTexto}
 
-O líder Itaú será acionado para alinhamento.
+O líder White Martins será acionado para alinhamento.
 `;
 
     this.$store.commit('updateDetalhes', this.detalhes);
@@ -108,7 +108,7 @@ Não, por motivo de: trata-se de roubo/furto, portanto não há equipamento para
 Termo de Responsabilidade do Equipamento de Backup Anexo?
 ${this.termoTexto}
 
-O líder Itaú será acionado para alinhamento.
+O líder White Martins será acionado para alinhamento.
 `;
 
       this.$store.commit('updateDetalhes', this.detalhes);

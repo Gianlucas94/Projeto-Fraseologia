@@ -4,7 +4,6 @@
 
     <div class="uk-grid uk-grid-medium uk-child-width-expand@s uk-margin">
       <div>
-        yan
         <div class="uk-margin">
           <label for="chamado" class="required">Tipo de solicitação</label>
           <div class="radios">

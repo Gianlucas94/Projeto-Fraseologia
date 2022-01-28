@@ -20,7 +20,7 @@
           <div class="uk-width-expand@m">
             <h1 class="uk-h4 uk-text-uppercase">Vitor Melo</h1>
             <p>
-              Atua como técnico de campo no Itaú no site Almirante Barroso no
+              Atua como técnico de campo no White Martins no site Almirante Barroso no
               Rio de Janeiro.
             </p>
             <p>
