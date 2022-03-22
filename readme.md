@@ -26,7 +26,7 @@ yarn generate
 yarn deploy
 
 #surge deploy
-nuxt generate && surge --project dist/ --domain fraseologia4mPP.surge.sh
+nuxt generate && surge --project dist/ --domain fraseologia4m.surge.sh
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
