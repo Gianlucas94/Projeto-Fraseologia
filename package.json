@@ -5,6 +5,7 @@
   "author": "Gianlucas Almeida",
   "license": "MIT",
   "private": true,
+  "build": "nuxt generate",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
