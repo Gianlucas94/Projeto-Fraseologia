@@ -6,11 +6,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "npm run generate"
-    
+    "dev": "yarn",
+    "build": "yarn build",
+    "start": "yarn start",
+    "generate": "yarn generate"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
