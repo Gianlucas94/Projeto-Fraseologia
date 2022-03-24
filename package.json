@@ -5,13 +5,13 @@
   "author": "Gianlucas Almeida",
   "license": "MIT",
   "private": true,
-  "build": "nuxt generate",
+  "build": "npm generate",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "deploy": "nuxt generate && surge --project dist/ --domain fraseologia4M.surge.sh"
+    "dev": "npm",
+    "build": "npm build",
+    "start": "npm start",
+    "generate": "npm generate",
+    "deploy": "npm generate && surge --project dist/ --domain fraseologia4M.surge.sh"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
