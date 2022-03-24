@@ -1,17 +1,17 @@
 {
-  "name": "fraseologiaWM",
+  "name": "fraseologia4M",
   "version": "1.0.0",
-  "description": "FraseologiaWM",
+  "description": "Fraseologia4M",
   "author": "Gianlucas Almeida",
   "license": "MIT",
   "private": true,
-  "build": "npm generate",
+  "build": "nuxt generate",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "npm generate",
-    "deploy": "npm generate && surge --project dist/ --domain fraseologia.surge.sh"
+    "generate": "nuxt generate",
+    "deploy": "nuxt generate && surge --project dist/ --domain fraseologia4M.surge.sh"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
