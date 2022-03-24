@@ -5,13 +5,13 @@
   "author": "Gianlucas Almeida",
   "license": "MIT",
   "private": true,
-  "build": "npm generate",
+  "build": "npm run generate",
   "scripts": {
     "dev": "npm",
-    "build": "npm build",
-    "start": "npm start",
-    "generate": "npm generate",
-    "deploy": "npm generate && surge --project dist/ --domain fraseologia4M.surge.sh"
+    "build": "npm run build",
+    "start": "npm run start",
+    "generate": "npm run generate",
+    "deploy": "npm run generate && surge --project dist/ --domain fraseologia4M.surge.sh"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
