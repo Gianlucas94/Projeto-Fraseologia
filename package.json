@@ -7,10 +7,11 @@
   "private": true,
   "scripts": {
     "dev": "npm",
-    "build": "npm run build",
+    "build": "npm run build --ignore-scripts",
     "start": "npm run start",
     "generate": "npm run generate",
     "deploy": "npm run generate && surge --project dist/ --domain fraseologia4M.surge.sh"
+    
   },
   "dependencies": {
     "cross-env": "^5.2.0",
