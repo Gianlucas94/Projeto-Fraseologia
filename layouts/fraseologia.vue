@@ -19,6 +19,9 @@
     <div v-else-if="layout === 'homologacao'">
       <homologacao-nav />
     </div>
+    <div v-else-if="layout === 'noc'">
+      <noc-nav />
+    </div>
     <form>
       <main class="main fraseologia uk-container uk-container-small uk-card">
         <nuxt />
@@ -34,6 +37,7 @@
 import ColorSchemeButton from '~/components/color-scheme-button.vue';
 import AtendimentoNav from '~/components/atendimento-nav.vue';
 import RemotoNav from '~/components/remoto-nav.vue';
+import NocNav from '~/components/noc-nav.vue';
 import TelecomNav from '~/components/telecom-nav.vue';
 import MobilidadeNav from '~/components/mobilidade-nav.vue';
 import VctpNav from '~/components/vctp-nav.vue';
@@ -46,6 +50,7 @@ export default {
     ColorSchemeButton,
     AtendimentoNav,
     RemotoNav,
+    NocNav,
     TelecomNav,
     MobilidadeNav,
     VctpNav,

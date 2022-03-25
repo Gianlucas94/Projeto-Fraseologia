@@ -28,6 +28,14 @@
             >Field</n-link
           >
         </div>
+        <div>
+          <n-link
+            to="/geral/inicio/atendimento"
+            class="uk-button uk-button-default"
+            @click.native="updateLayout('noc')"
+            >Noc</n-link
+          >
+        </div>
         <!--
         <div>
           <n-link
