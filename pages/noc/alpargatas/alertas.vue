@@ -86,7 +86,7 @@
           <li>
             <a class="uk-accordion-title" href="#">Em caso de indisponibilidade do usuário em realizar os testes do software</a>
             <div class="uk-accordion-content">
-              <textarea id="finalizacao3" class="uk-textarea" rows="6" style="height: auto" readonly v-model="finalizacao3" @input="updateDetalhes"></textarea>
+              <textarea id="finalizacao3" class="uk,k-textarea" rows="6" style="height: auto" readonly v-model="finalizacao3" @input="updateDetalhes"></textarea>
             </div>
           </li>
         </ul>

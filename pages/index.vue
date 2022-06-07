@@ -10,7 +10,7 @@
     >
       <h1 class="uk-h4 uk-text-uppercase">Áreas</h1>
       <div class="uk-child-width-1-5@m uk-grid-small uk-grid-match" uk-grid>
-        <!--
+        
           <div>
           <n-link
             to="/atendimento/inicio/chat"
@@ -19,7 +19,6 @@
             >Atendimento</n-link
           >
         </div>
-        !-->
         <div>
           <n-link
             to="/geral/inicio/atendimento"

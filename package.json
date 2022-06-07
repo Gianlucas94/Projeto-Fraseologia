@@ -5,6 +5,8 @@
   "author": "Gianlucas Almeida",
   "license": "MIT",
   "private": true,
+  "start:webpack": "webpack-dev-server --config webpack.dev.js --hot --host 0.0.0.0",
+  "watch": "webpack --config webpack.config.js --watch --progress",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -27,4 +29,5 @@
   "prettier": {
     "singleQuote": true
   }
+  
 }

@@ -1,22 +1,22 @@
 <template>
   <div>
-    <ul class="uk-tab" data-uk-tab="{connect:'#alerta-opcoes'}">
-      <li><a href="#">Início</a></li>
-      <li><a href="#">Frases de Strike</a></li>
+    <ul class="uk-tab" data-uk-tab="{connect:'#replicacritica-opcoes'}">
+      <li><a href="#">Healty</a></li>
+      <li><a href="#">Unhealty</a></li>
       <li><a href="#">Finalização</a></li>
     </ul>
-    <div id="alerta-opcoes" class="uk-switcher">
+    <div id="recplicacritica-opcoes" class="uk-switcher">
       <div class="tab-content1">
 
         <div class="uk-grid uk-grid-medium uk-child-width-expand@s uk-margin">
           <div>
-            <label for="alerta">Apresentação</label>
+            <label for="alerta">Comentário</label>
             <textarea id="apresentacao" class="uk-textarea" v-model="apresentacao" readonly></textarea>
           </div>
           <div>
             <div class="uk-margin">
-              <label for="nome-tecnico" class="uk-form-label required">Nome do técnico</label>
-              <input id="nome-tecnico" class="uk-input" type="text" v-model="nomeTecnico" @input="updateDetalhes" required />
+              <label for="nome-servidor" class="uk-form-label required">Nome do Servidor</label>
+              <input id="nome-servidor" class="uk-input" type="text" v-model="nomeTecnico" @input="updateDetalhes" required />
             </div>
           </div>
         </div>

@@ -10,10 +10,18 @@
 
         <div class="uk-grid uk-grid-medium uk-child-width-expand@s uk-margin">
           <div>
-            <label for="chat">Apresentação</label>
-            <textarea id="apresentacao" class="uk-textarea" v-model="apresentacao" readonly></textarea>
+            <label for="chat">Início de atendimento</label>
+            <textarea id="inicio" class="uk-textarea" rows="8" style="height: auto" v-model="inicio" readonly></textarea>
           </div>
           <div>
+            <div class="uk-margin">
+              <label for="nome-cliente" class="uk-form-label required">Nome do Usuário</label>
+              <input id="nome-cliente" class="uk-input" type="text" v-model="nomeCliente" @input="updateDetalhes" required />
+            </div>
+              <div class="uk-margin">
+                <label for="numero-ticket" class="uk-form-label required">Número do Ticket</label>
+                <input id="numero-ticket" class="uk-input" type="text" v-model="numeroTicket" @input="updateDetalhes" required />
+              </div>
             <div class="uk-margin">
               <label for="nome-tecnico" class="uk-form-label required">Nome do técnico</label>
               <input id="nome-tecnico" class="uk-input" type="text" v-model="nomeTecnico" @input="updateDetalhes" required />
@@ -120,8 +128,13 @@ export default {
       resumo: 'Chat',
       // ---
       nomeTecnico: '',
-      apresentacao: `Service Desk, bom dia, me chamo
-Em que posso ajudar?`,
+      nomeCliente: '',
+      numeroTicket: '',
+
+      inicio: `Olá ${this.nomeCliente}, tudo bem?
+Estamos com o ticket ${this.numeroTicket} aberto em nossa plataforma e entramos em contato para tratarmos neste momento, seguindo o nosso processo de atendimento.
+Podemos realizar o atendimento neste momento ou qual melhor agenda?
+${this.nomeTecnico}.`,
 
       informacoesUsuario: `Poderia enviar seguintes informações:
 
@@ -177,15 +190,23 @@ Obs: Aguarde até 6min para o retorno do colaborador`,
 
     if (localStorage.getItem('nomeTecnico')) {
       this.nomeTecnico = localStorage.getItem('nomeTecnico');
-      this.apresentacao = `Service Desk, bom dia, me chamo ${this.nomeTecnico}
-Em que posso ajudar?`;
+      this.nomeCliente = localStorage.getItem("nomeCliente");
+      this.numeroTicket = localStorage.getItem("numeroTicket");
+      this.inicio = `Olá ${this.nomeCliente}, tudo bem?
+Estamos com o ticket ${this.numeroTicket} aberto em nossa plataforma e entramos em contato para tratarmos neste momento, seguindo o nosso processo de atendimento.
+Podemos realizar o atendimento neste momento ou qual melhor agenda?
+${this.nomeTecnico}.`;
     }
   },
   methods: {
     updateDetalhes() {
-      this.apresentacao = `Service Desk, bom dia, me chamo ${this.nomeTecnico}.
-Em que posso ajudar?`;
+      this.inicio = `Olá ${this.nomeCliente}, tudo bem?
+Estamos com o ticket ${this.numeroTicket} aberto em nossa plataforma e entramos em contato para tratarmos neste momento, seguindo o nosso processo de atendimento.
+Podemos realizar o atendimento neste momento ou qual melhor agenda?
+${this.nomeTecnico}.`;
       localStorage.setItem('nomeTecnico', this.nomeTecnico);
+      localStorage.setItem('nomeCliente', this.nomeCliente);
+      localStorage.setItem('numeroTicket', this.numeroTicket);
 
       this.finalizacao1 = `Sr(a). ${this.nomeUsuario} o escopo de Service Desk para atendimento deste chamado é dado como concluído com a instalação e testes realizados com sucesso.. Dada confirmação de que o software está funcional, estamos fechando o chamado e solicitamos sua colaboração em responder a pesquisa de satisfação. As configurações internas ( como banco de dados por exemplo) dependem de especificações de cada área e orientamos que vc procure sua liderança /equipe para fazer as configurações especificas de sua área.`;
       this.finalizacao2 = `Sr(a). ${this.nomeUsuario} o escopo de Service Desk para atendimento deste chamado é dado como concluído com a instalação e testes realizados com sucesso. Dada confirmação de que o software está funcional, estamos fechando o chamado e solicitamos sua colaboração em responder a pesquisa de satisfação. Caso haja falha ou problema relacionado a esta instalação, pedimos que reabra o chamado em até 3 dias, e estaremos a inteira disposição para revisarmos a instalação e prover o suporte necessário.`;
